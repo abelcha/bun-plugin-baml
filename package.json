@@ -1,12 +1,26 @@
 {
   "name": "bun-plugin-baml",
+  "version": "0.1.0",
+  "description": "Bun plugin to import .baml files directly, backed by BAML's native runtime",
   "module": "index.ts",
   "type": "module",
-  "private": true,
+  "license": "MIT",
+  "exports": {
+    ".": "./index.ts",
+    "./preload": "./preload.ts"
+  },
+  "files": [
+    "index.ts",
+    "preload.ts"
+  ],
+  "scripts": {
+    "demo": "cd demo && bun main.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^5",
+    "@boundaryml/baml": "^0.222.0"
   }
 }

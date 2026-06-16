@@ -1,0 +1,9 @@
+{
+  "name": "bun-plugin-baml-demo",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "bun-plugin-baml": "link:bun-plugin-baml",
+    "@boundaryml/baml": "^0.222.0"
+  }
+}
