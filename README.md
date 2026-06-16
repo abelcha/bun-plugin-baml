@@ -53,6 +53,24 @@ const resume = await b.ExtractResume({ text: "..." });
 console.log(resume.name, resume.skills);
 ```
 
+### Per-call options
+
+A second optional argument overrides behavior for that one call:
+
+```ts
+await b.ExtractResume(
+  { text: "..." },
+  {
+    model: "kimi-k2.6", // override the .baml-declared client with a raw model id;
+                         // the plugin resolves provider/base_url/api_key from a
+                         // built-in prefix map (gpt-, claude-, gemini-, grok-,
+                         // kimi-/moonshot-, glm-, deepseek-, llama-, minimax-)
+    verbose: true,       // print prompt/response/usage for this call via a
+                          // BAML Collector, regardless of the ambient BAML_LOG level
+  },
+);
+```
+
 ## Caveats
 
 - The returned client is untyped (`any` via `Proxy`) — there's no `.d.ts`
