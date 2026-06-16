@@ -25,8 +25,10 @@ No files are generated on disk and no subprocess is spawned.
 
 ## Install
 
+Not on npm yet — install straight from GitHub:
+
 ```bash
-bun add bun-plugin-baml @boundaryml/baml
+bun add github:abelcha/bun-plugin-baml @boundaryml/baml
 ```
 
 ## Setup

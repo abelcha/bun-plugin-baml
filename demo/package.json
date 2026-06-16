@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "bun-plugin-baml": "link:bun-plugin-baml",
+    "bun-plugin-baml": "github:abelcha/bun-plugin-baml",
     "@boundaryml/baml": "^0.222.0"
   }
 }

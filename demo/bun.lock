@@ -6,7 +6,7 @@
       "name": "bun-plugin-baml-demo",
       "dependencies": {
         "@boundaryml/baml": "^0.222.0",
-        "bun-plugin-baml": "link:bun-plugin-baml",
+        "bun-plugin-baml": "github:abelcha/bun-plugin-baml",
       },
     },
   },
@@ -31,6 +31,8 @@
 
     "@scarf/scarf": ["@scarf/scarf@1.4.0", "", {}, "sha512-xxeapPiUXdZAE3che6f3xogoJPeZgig6omHEy1rIY5WVsB3H2BHNnZH+gHG6x91SCWyQCzWGsuL2Hh3ClO5/qQ=="],
 
-    "bun-plugin-baml": ["bun-plugin-baml@link:bun-plugin-baml", {}],
+    "bun-plugin-baml": ["bun-plugin-baml@github:abelcha/bun-plugin-baml#ccfc04a", { "peerDependencies": { "@boundaryml/baml": "^0.222.0", "typescript": "^5" } }, "abelcha-bun-plugin-baml-ccfc04a", "sha512-flgCyut7TVSL4oZqp+1NN2S8dzyTttGSBCtcPuK4YluFXhje8I6HQKYsMd/jwoCHF71sz3oZ4WJxhgw4WT54Bw=="],
+
+    "typescript": ["typescript@5.9.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="],
   }
 }
